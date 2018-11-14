@@ -4,7 +4,7 @@ import model.TollGate;
 
 public class VehicleTypeHandler {
 
-    int vehicleCost;
+    private int vehicleCost;
 
     public int getVehicleCost(String vehicleType, TollGate tollGate) {
         switch (vehicleType) {

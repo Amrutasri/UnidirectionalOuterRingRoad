@@ -16,13 +16,18 @@ public class TollCollector {
 
     public int calculateTollFee(String vehicleType, int entryTollNumber, int exitTollNumber) {
         int tollFee = 0;
-        for(int i = entryTollNumber; i<exitTollNumber; i++) {
+        int index = entryTollNumber;
+        do{
             for(TollGate tollGate : tollGates) {
-                if(tollGate.getTollNumber()==i) {
+                if(tollGate.getTollNumber()==index) {
                     tollFee = tollFee + vehicleTypeHandler.getVehicleCost(vehicleType,tollGate);
                 }
             }
-        }
+            index++;
+            if(index>tollGates.size()) {
+                index = 1;
+            }
+        }while (index!=exitTollNumber);
 
         return tollFee;
     }

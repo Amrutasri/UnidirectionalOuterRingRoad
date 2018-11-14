@@ -17,6 +17,7 @@ public class TollGate {
     }
 
     public void setChargeFor2Wheeler(int charge) {
+        twoWheeler.setName("2Wheeler");
         twoWheeler.setCharge(charge);
     }
 
@@ -25,6 +26,7 @@ public class TollGate {
     }
 
     public void setChargeFor4Wheeler(int charge) {
+        twoWheeler.setName("4Wheeler");
         fourWheeler.setCharge(charge);
     }
 
