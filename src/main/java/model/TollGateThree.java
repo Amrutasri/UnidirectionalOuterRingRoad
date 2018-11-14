@@ -1,3 +1,7 @@
+package model;
+
+import model.TollGate;
+
 public class TollGateThree extends TollGate {
 
     TollGateThree() {

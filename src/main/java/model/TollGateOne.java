@@ -1,4 +1,8 @@
-public class TollGateOne extends TollGate{
+package model;
+
+import model.TollGate;
+
+public class TollGateOne extends TollGate {
 
     TollGateOne() {
         twoWheeler.cost = 25;
