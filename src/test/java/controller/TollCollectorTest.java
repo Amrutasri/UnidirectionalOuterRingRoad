@@ -11,7 +11,7 @@ class TollCollectorTest {
     @DisplayName("should return 0 as toll fee.")
     void shouldReturn0AsTollFee() {
         TollCollector tollCollector = new TollCollector();
-        int tollFee = tollCollector.calculateTollFee("2W",1,2);
+        int tollFee = tollCollector.calculateTollFee("2Wheeler",1,2);
         assertEquals(0,tollFee);
     }
 

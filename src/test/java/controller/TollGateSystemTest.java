@@ -3,13 +3,11 @@ package controller;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 
-import static org.junit.jupiter.api.Assertions.*;
 import static org.mockito.Mockito.mock;
-import static org.mockito.Mockito.validateMockitoUsage;
 
-class TollCollectorSystemTest {
+class TollGateSystemTest {
 
-    TollCollectorSystem tollCollectorSystem = new TollCollectorSystem();
+    TollGateSystem tollCollectorSystem = new TollGateSystem();
     TollCollector tollCollector = mock(TollCollector.class);
 
     @Test
